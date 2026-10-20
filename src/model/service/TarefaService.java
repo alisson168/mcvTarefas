@@ -6,8 +6,8 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class TarefaService {
-    private static int id;
-    Set<Tarefa> bancoDeDados = new HashSet<>();
+    private static int id =1;
+    Set<Tarefa> ListaTarefas = new HashSet<>();
 
     //CRUD
 
@@ -17,7 +17,11 @@ public class TarefaService {
         t.setTitulo(IO.readln("Digite o título: "));
         t.setDescricao(IO.readln("Digite a descrição: "));
         t.setStatus(Status.PENDENTE);
-        bancoDeDados.add(t);
+        ListaTarefas.add(t);
+    }
+
+    public void mostrarTarefa(){
+        IO.println(ListaTarefas);
     }
 
 }

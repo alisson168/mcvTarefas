@@ -1,5 +1,6 @@
 package controller;
 
+import model.service.PessoaService;
 import model.service.TarefaService;
 
 public class TarefaController {
@@ -13,4 +14,10 @@ public class TarefaController {
         tarefaService.criarTarefa();
         IO.println("Tarefa criada com sucesso!!");
     }
+    public void mostrarPessoa(){
+        PessoaService.criarTarefa();
+    }
+
+
+
 }

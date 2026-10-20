@@ -4,8 +4,11 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class PessoaService {
-    private static int id;
+    private static int id =1;
     Set<Pessoa> bancoDeDados = new HashSet<>();
+
+    public static void criarTarefa() {
+    }
 
     //CRUD
 
@@ -18,6 +21,6 @@ public class PessoaService {
         bancoDeDados.add(p);
     }
 
-
+    
 
 }
